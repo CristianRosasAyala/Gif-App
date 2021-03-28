@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import { AddCategory } from './Components/AddCategory';
-import { GridCategory } from './Components/GridCategory';
+import { GridCategory } from './Components/GifGrid';
 
 
 function GifExpertApp(props) {
-    const animes = ['Doom'];
-    const [categories, setState] = useState(animes);
+    const gifs = ['JOJOS'];
+    const [categories, setCategories] = useState(gifs);
     /* const handlerAdd = () =>{
         setstate([...state, 'nuevo anim']);
     } */
@@ -14,7 +14,7 @@ function GifExpertApp(props) {
         <>
             <h2>GifExpertApp</h2>
             <hr />
-            <AddCategory usaState = {setState}/>
+            <AddCategory usaState = {setCategories}/>
             <ol>
                 {
                     categories.map(category => (
