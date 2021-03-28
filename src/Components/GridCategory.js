@@ -16,7 +16,7 @@ export const GridCategory = ({category}) => {
         const gifs = data.map( img =>{
             return{
                 id: img.id,
-                title: img.title, 
+                title: img.title,
                 url: img.images.downsized.url,
             }
         });
@@ -35,5 +35,5 @@ export const GridCategory = ({category}) => {
                                         />)}
             
         </div>
-    )
+    );
 }

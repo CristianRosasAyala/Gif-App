@@ -4,8 +4,8 @@ import { GridCategory } from './Components/GridCategory';
 
 
 function GifExpertApp(props) {
-    const animes = ['Jojos'];
-    const [categories, setState] = useState(animes)
+    const animes = ['Doom'];
+    const [categories, setState] = useState(animes);
     /* const handlerAdd = () =>{
         setstate([...state, 'nuevo anim']);
     } */
